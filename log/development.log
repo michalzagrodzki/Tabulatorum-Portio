@@ -186,3 +186,9 @@ Started GET "/assets/stories-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127
 
 
 Started GET "/assets/application-001948a807d6467a657420955d9f0c1c.js?body=1" for 127.0.0.1 at 2015-03-25 19:52:21 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-25 19:54:01 +0100
+Processing by StoriesController#index as HTML
+  Rendered stories/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.0ms)
