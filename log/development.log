@@ -192,3 +192,31 @@ Started GET "/" for 127.0.0.1 at 2015-03-25 19:54:01 +0100
 Processing by StoriesController#index as HTML
   Rendered stories/index.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-25 22:37:10 +0100
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.0ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 98ms (Views: 94.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/stories-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-25 22:37:10 +0100
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 127.0.0.1 at 2015-03-25 22:37:10 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-25 22:37:10 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-25 22:37:10 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-25 22:37:10 +0100
+
+
+Started GET "/assets/stories-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-25 22:37:10 +0100
+
+
+Started GET "/assets/application-001948a807d6467a657420955d9f0c1c.js?body=1" for 127.0.0.1 at 2015-03-25 22:37:10 +0100
