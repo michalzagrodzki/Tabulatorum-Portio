@@ -314,3 +314,291 @@ Started GET "/assets/stories-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127
 
 
 Started GET "/assets/application-001948a807d6467a657420955d9f0c1c.js?body=1" for 127.0.0.1 at 2015-03-26 16:40:28 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 16:42:56 +0100
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (1.0ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined method `each' for "[\"first\", \"second\", \"third\"]":String):
+    1: <h1>Main View - testing purpose</h1>
+    2: 
+    3: <% @stories.each do |story| %>
+    4:     <% story.name.each do |part|  %>
+    5:         <p><%= part  %></p>
+    6:     <% end %>
+    7: 
+  app/views/stories/index.html.erb:4:in `block in _app_views_stories_index_html_erb__73460544_57003528'
+  app/views/stories/index.html.erb:3:in `_app_views_stories_index_html_erb__73460544_57003528'
+
+
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (66.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (171.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 16:47:50 +0100
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.0ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (23.0ms)
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (undefined method `each' for #<Story:0x6ba6708>):
+    1: <h1>Main View - testing purpose</h1>
+    2: 
+    3: <% @stories.each do |story| %>
+    4:     <% story.each do |item|  %>
+    5:         <p><%= item %></p>
+    6:     <% end %>
+    7: 
+  app/views/stories/index.html.erb:4:in `block in _app_views_stories_index_html_erb__73460544_56468952'
+  app/views/stories/index.html.erb:3:in `_app_views_stories_index_html_erb__73460544_56468952'
+
+
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (68.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (147.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 16:48:39 +0100
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.0ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined method `each' for "[\"first\", \"second\", \"third\"]":String):
+    1: <h1>Main View - testing purpose</h1>
+    2: 
+    3: <% @stories.each do |story| %>
+    4:     <% story.name.each do |item|  %>
+    5:         <p><%= item %></p>
+    6:     <% end %>
+    7: 
+  app/views/stories/index.html.erb:4:in `block in _app_views_stories_index_html_erb__73460544_55880736'
+  app/views/stories/index.html.erb:3:in `_app_views_stories_index_html_erb__73460544_55880736'
+
+
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (67.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (146.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 16:50:39 +0100
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.0ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `each' for "[\"first\", \"second\", \"third\"]":String):
+    1: <h1>Main View - testing purpose</h1>
+    2: 
+    3: <% @stories.each do |story| %>
+    4:     <% story.name.each do |item|  %>
+    5:         <p><%= item %></p>
+    6:     <% end %>
+    7: 
+  app/views/stories/index.html.erb:4:in `block in _app_views_stories_index_html_erb__73460544_55880736'
+  app/views/stories/index.html.erb:3:in `_app_views_stories_index_html_erb__73460544_55880736'
+
+
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (70.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (152.0ms)
+  [1m[36m (86.0ms)[0m  [1mDROP TABLE "stories"[0m
+  [1m[35m (99.0ms)[0m  CREATE TABLE "stories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (226.0ms)[0m  DROP TABLE "stories"
+  [1m[36m (86.0ms)[0m  [1mCREATE TABLE "stories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (116.0ms)[0m  [1mDROP TABLE "stories"[0m
+  [1m[35m (73.0ms)[0m  CREATE TABLE "stories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (75.0ms)[0m  DROP TABLE "stories"
+  [1m[36m (77.0ms)[0m  [1mCREATE TABLE "stories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "stories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "[\"first\", \"second\", \"third\"]"], ["created_at", "2015-03-26 18:38:20.763636"], ["updated_at", "2015-03-26 18:38:20.763636"]]
+  [1m[35m (103.0ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 19:40:47 +0100
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (1.0ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `each' for "[\"first\", \"second\", \"third\"]":String):
+    1: <h1>Main View - testing purpose</h1>
+    2: 
+    3: <% @stories.each do |story| %>
+    4:     <% story.name.each do |item|  %>
+    5:         <p><%= item %></p>
+    6:     <% end %>
+    7: 
+  app/views/stories/index.html.erb:4:in `block in _app_views_stories_index_html_erb__73460544_55880736'
+  app/views/stories/index.html.erb:3:in `_app_views_stories_index_html_erb__73460544_55880736'
+
+
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (73.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (159.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeStringToText (20150326205723)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TEMPORARY TABLE "astories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "stories"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "astories" ("id","name","created_at","updated_at") VALUES (1, '["first", "second", "third"]', '2015-03-26 18:38:20.763636', '2015-03-26 18:38:20.763636')[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stories"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "astories"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "stories" ("id","name","created_at","updated_at") VALUES (1, '["first", "second", "third"]', '2015-03-26 18:38:20.763636', '2015-03-26 18:38:20.763636')[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "astories"
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150326205723"]]
+  [1m[35m (88.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 22:03:46 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.0ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (undefined method `each' for "[\"first\", \"second\", \"third\"]":String):
+    1: <h1>Main View - testing purpose</h1>
+    2: 
+    3: <% @stories.each do |story| %>
+    4:     <% story.name.each do |item|  %>
+    5:         <p><%= item %></p>
+    6:     <% end %>
+    7: 
+  app/views/stories/index.html.erb:4:in `block in _app_views_stories_index_html_erb__73460544_55880736'
+  app/views/stories/index.html.erb:3:in `_app_views_stories_index_html_erb__73460544_55880736'
+
+
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (65.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (144.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 22:04:48 +0100
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (1.0ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/index.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 41ms
+
+ActionView::Template::Error (undefined method `each' for "[\"first\", \"second\", \"third\"]":String):
+    1: <h1>Main View - testing purpose</h1>
+    2: 
+    3: <% @stories.each do |story| %>
+    4:     <% story.name.each do |item|  %>
+    5:         <p><%= item %></p>
+    6:     <% end %>
+    7: 
+  app/views/stories/index.html.erb:4:in `block in _app_views_stories_index_html_erb__73460544_55880736'
+  app/views/stories/index.html.erb:3:in `_app_views_stories_index_html_erb__73460544_55880736'
+
+
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (66.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (144.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 22:12:10 +0100
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (1.0ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined method `each' for "[\"first\", \"second\", \"third\"]":String):
+    1: <h1>Main View - testing purpose</h1>
+    2: 
+    3: <% @stories.each do |story| %>
+    4:     <% story.name.each do |item|  %>
+    5:         <p><%= item.to_s %></p>
+    6:     <% end %>
+    7: 
+  app/views/stories/index.html.erb:4:in `block in _app_views_stories_index_html_erb__73460544_56107248'
+  app/views/stories/index.html.erb:3:in `_app_views_stories_index_html_erb__73460544_56107248'
+
+
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (70.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered f:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (151.0ms)

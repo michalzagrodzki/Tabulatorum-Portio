@@ -7,5 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Story.create(
-              name: ['first', 'second', 'third']
+              name: ["first", "second", "third"]
              )
