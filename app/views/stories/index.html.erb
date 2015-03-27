@@ -1,5 +1,10 @@
 <h1>Main View - testing purpose</h1>
 
+<%# Nested loop which goes through all Stories.
+Then it goes through 'name' value
+and prints all values from hash stored in 'name'.
+ %>
+
 <% @stories.each do |story| %>
     <% story.name.each do |key, value|  %>
         <p><%= value %></p>
