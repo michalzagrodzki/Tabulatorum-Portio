@@ -1,8 +1,8 @@
 <h1>Main View - testing purpose</h1>
 
 <% @stories.each do |story| %>
-    <% story.name.each do |item|  %>
-        <p><%= item %></p>
+    <% story.name.each do |key, value|  %>
+        <p><%= value %></p>
     <% end %>
 
 <% end %>
