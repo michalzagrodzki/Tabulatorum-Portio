@@ -11,3 +11,9 @@ and prints all values from hash stored in 'name'.
     <% end %>
 
 <% end %>
+
+<% @stories.each do |story| %>
+    <%= link_to(story) do %>
+      <p>Story</p>
+  <% end %>
+<% end %>
